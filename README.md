@@ -11,18 +11,20 @@ my-server
 ├── .env
 └── src
     ├── Controllers
-					└── controllers grouped by feature/routes in folders. 
-		├── Models
-					└── models used in the app - will have a representation on the db. 
-		├── db   ── will abstract and handle all conections with db   
+	└── controllers grouped by feature/routes in files. 
+    ├── Models
+        └── models used in the app - will have a representation on the db. 
+    ├── db   ── will abstract and handle all conections with db   
     └── ...
 ```
 ### Dependencies
 
 ```
-   - eslint: Linters are tools that perform static analysis on software in order to recognise and report adherence/non-adherance to some set of coding best practice.
+   - eslint: Linters are tools that perform static analysis on software in order to recognise
+   and report adherence/non-adherance to some set of coding best practice.
    - express: Library to create server and attend HTTP request.
-   - jwt / jsonwebtoken / express-jwt: the intention is to create a login app to list a bunch of things for logged in users. the authentication will be handled with jwt.
+   - jwt / jsonwebtoken / express-jwt: the intention is to create a login app to list a bunch of things
+   for logged in users. the authentication will be handled with jwt.
 ```
 
 **eslint:** To explain a little further, `eslint src/js` is a command that we could enter in our terminal/command line to run eslint on JavaScript files contained in the `src/js` directory inside our app directory. Including the above inside our app's package.json file provides a shortcut for this command. => inside scripts: `"lint": "eslint src"`
